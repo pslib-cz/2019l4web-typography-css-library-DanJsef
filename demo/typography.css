@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans&display=swap");
+a {
+  color: black;
+}
+article {
+  font-family: "Lora", serif;
+  font-size: 18px;
+  max-width: 640px;
+  margin: 24px;
+}
+article header h1 {
+  font-family: "Lora", serif;
+  font-weight: normal;
+}
+article h1,
+article h2,
+article h3,
+article header div,
+article figcaption,
+article footer > div div {
+  font-family: "Open Sans", sans-serif;
+}
+article h1,
+article h2,
+article h3,
+article header div,
+article figure,
+article p,
+article figcaption,
+article ul,
+article ol,
+article blockquote,
+article footer {
+  margin: 0;
+  margin-top: 0.8em;
+}
+article h1 {
+  font-size: 1.7em;
+}
+article h2 {
+  font-size: 1.4em;
+}
+article h3 {
+  font-size: 1.2em;
+}
+article header div,
+article figcaption,
+article footer > div div {
+  font-size: 0.9em;
+  color: rgb(92, 92, 92);
+}
+article header div a,
+article figcaption a,
+article footer > div div a {
+  color: rgb(92, 92, 92);
+}
+article p,
+article li,
+div {
+  line-height: 1.5;
+}
+article figure img {
+  max-width: 100%;
+}
+article figcaption {
+  text-align: center;
+}
+article ul,
+article ol {
+  padding: 0 0 0 1em;
+}
+article ul ul,
+article ol ol,
+article ul ol,
+article ol ul {
+  margin: 0;
+}
+article blockquote {
+  font-style: italic;
+  font-size: 1.1em;
+  margin-left: 0.8em;
+  padding-left: 0.8em;
+  border-left: solid rgb(177, 177, 177) 0.6em;
+}
+article footer {
+  height: 64px;
+  padding-top: 0.8em;
+  border-top: rgb(177, 177, 177) 1px solid;
+}
+article footer > div {
+  display: flex;
+}
+article footer img {
+  border-radius: 50%;
+  width: 64px;
+}
+article footer > div div {
+  vertical-align: middle;
+  margin: auto;
+  margin-left: 0.8em;
+}
+
+@media only screen and (min-width: 688px) {
+  article {
+    margin: 24px auto;
+    font-size: 19px;
+  }
+}
