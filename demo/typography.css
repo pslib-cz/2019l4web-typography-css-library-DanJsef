@@ -1,12 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans&display=swap");
-a {
-  color: black;
+body {
+  background-color: rgb(245, 245, 245);
 }
+
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans&display=swap");
 article {
   font-family: "Lora", serif;
   font-size: 18px;
-  max-width: 640px;
+  max-width: 680px;
   margin: 24px;
+  background-color: rgb(245, 245, 245);
+}
+article a {
+  color: rgb(92, 92, 92);
 }
 article header h1 {
   font-family: "Lora", serif;
@@ -47,11 +52,6 @@ article header div,
 article figcaption,
 article footer > div div {
   font-size: 0.9em;
-  color: rgb(92, 92, 92);
-}
-article header div a,
-article figcaption a,
-article footer > div div a {
   color: rgb(92, 92, 92);
 }
 article p,
@@ -100,9 +100,19 @@ article footer > div div {
   margin-left: 0.8em;
 }
 
-@media only screen and (min-width: 688px) {
+@media only screen and (min-width: 728px) {
   article {
     margin: 24px auto;
     font-size: 19px;
+  }
+}
+@media print {
+  article h1,
+  article h2,
+  article h3,
+  article header div,
+  article figcaption,
+  article footer > div div {
+    font-family: "Lora", serif;
   }
 }
