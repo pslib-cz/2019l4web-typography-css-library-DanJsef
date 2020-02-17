@@ -1,14 +1,10 @@
-body {
-  background-color: rgb(245, 245, 245);
-}
-
-@import url("https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=latin-ext");
 article {
   font-family: "Lora", serif;
   font-size: 18px;
   max-width: 680px;
   margin: 24px;
-  background-color: rgb(245, 245, 245);
+  quotes: "„" "“" "‚" "‘";
 }
 article a {
   color: rgb(92, 92, 92);
@@ -20,15 +16,15 @@ article header h1 {
 article h1,
 article h2,
 article h3,
-article header div,
+article header.header-comp div,
 article figcaption,
-article footer > div div {
+article footer.footer-comp > div div {
   font-family: "Open Sans", sans-serif;
 }
 article h1,
 article h2,
 article h3,
-article header div,
+article header.header-comp div,
 article figure,
 article p,
 article figcaption,
@@ -48,9 +44,9 @@ article h2 {
 article h3 {
   font-size: 1.2em;
 }
-article header div,
+article header.header-comp div,
 article figcaption,
-article footer > div div {
+article footer.footer-comp > div div {
   font-size: 0.9em;
   color: rgb(92, 92, 92);
 }
@@ -83,36 +79,32 @@ article blockquote {
   border-left: solid rgb(177, 177, 177) 0.6em;
 }
 article footer {
-  height: 64px;
   padding-top: 0.8em;
   border-top: rgb(177, 177, 177) 1px solid;
 }
-article footer > div {
+article.footer-comp {
+  height: 64px;
+}
+article footer.footer-comp > div {
   display: flex;
 }
-article footer img {
+article footer.footer-comp img {
   border-radius: 50%;
   width: 64px;
 }
-article footer > div div {
+article footer.footer-comp > div div {
   vertical-align: middle;
   margin: auto;
   margin-left: 0.8em;
 }
 
-@media only screen and (min-width: 728px) {
-  article {
-    margin: 24px auto;
-    font-size: 19px;
-  }
-}
 @media print {
   article h1,
   article h2,
   article h3,
-  article header div,
+  article header.header-comp div,
   article figcaption,
-  article footer > div div {
+  article footer.footer-comp > div div {
     font-family: "Lora", serif;
   }
 }

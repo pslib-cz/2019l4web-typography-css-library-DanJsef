@@ -27,7 +27,7 @@ This style set requires **[normalize.css](https://necolas.github.io/normalize.cs
 
 ## Usage
 
-This library is based on html structure, so you don't have to worry about any classes.
+This library is mainly based on html structure, so you don't have to worry about classes. There are few additional components which are initialized by class.
 
 Entire blog post has to be wrapped in **article** tag.
 
@@ -55,30 +55,6 @@ Entire blog post has to be wrapped in **article** tag.
 </header>
 ```
 
-### Headings
-
-```html
-<h1>First level heading</h1>
-<h2>Second level heading</h2>
-<h3>Third level heading</h3>
-```
-
-### Paragraph
-
-```html
-<p>
-  Some kind of text.
-</p>
-```
-
-### Blockquote
-
-```html
-<blockquote cite="#">
-  Text of the quote.
-</blockquote>
-```
-
 ### Image with caption
 
 ```html
@@ -90,33 +66,10 @@ Entire blog post has to be wrapped in **article** tag.
 </figure>
 ```
 
-### Lists
-
-```html
-<ol>
-  <li>Lorem</li>
-  <li>
-    Lorem
-    <ol>
-      <li>Sub-Lorem</li>
-    </ol>
-  </li>
-</ol>
-<ul>
-  <li>Lorem</li>
-  <li>
-    Lorem
-    <ul>
-      <li>Sub-Lorem</li>
-    </ul>
-  </li>
-</ul>
-```
-
 ### Footer
 
 ```html
-<footer>
+<footer class="footer-comp">
   <div>
     <img src="" alt="author" />
     <div>
